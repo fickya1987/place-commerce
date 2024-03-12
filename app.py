@@ -47,8 +47,8 @@ def input_image_setup(uploaded_file):
         raise FileNotFoundError("No File Uploaded")
 
 
-st.title("See, Snap, Learn !")
-st.header(":orange[Upload Images of Historical Places]")
+st.title("Place2Joy Small Medium Enterprises (SMEs) Directory")
+st.header(":orange[Upload Your Chosen Images of Places to Find Nearby Small Medium Enterprises (SMEs)]")
 uploaded_file = st.file_uploader("", type=['png', 'jpg', 'jpeg', 'webp'])
 
 if uploaded_file is not None:
