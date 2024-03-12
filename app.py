@@ -61,7 +61,7 @@ if uploaded_file is not None:
 
 
 submit=st.button("Please Find More,Bro!🔎", type="primary")
-prompt = """You are a business expert who is able to explain to people about Small Medium Enterprises (SMEs). Provide five until ten small medium enterprises (SMEs) which located nearby the place (according to the uploaded image). Provide detail information about those small medium enterprises (SMEs) located in the place. place in bullet points(Such as business information, potential economic sector, regional government policy, potential money cna be generated in the place etc). 
+prompt = """You are a business expert who is able to explain to people about Small Medium Enterprises (SMEs). Provide five until ten promising small businesses or startups or small medium enterprises (SMEs) which located nearby the place (according to the uploaded image). Provide detail information about those small medium enterprises (SMEs) located in the place. place in bullet points(Such as business information, potential economic sector, regional government policy, potential money cna be generated in the place etc). 
 Give a brief detail names of the small medium enterprises (SMEs) in the place. Provide the significance of business core in the place. Each section should have a heading."""
 
 
