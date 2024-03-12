@@ -9,7 +9,7 @@ from PIL import Image
 load_dotenv()
 
 
-genai.configure(api_key = os.getenv('Gemini_Api_Key'))
+genai.configure(api_key = os.getenv('GOOGLE_API_KEY'))
 
 def detect_images(prompt, uploaded_img):
     model = genai.GenerativeModel('gemini-pro-vision')
@@ -60,12 +60,9 @@ if uploaded_file is not None:
 
 
 
-submit=st.button("Discover🔎", type="primary")
-prompt = """You are a tourist guide where you need to see the historical places and provide information about them. 
-Provide architectural  information about the place in bullet points(Such as constructed by, constructed time, place, size etc). 
-Give a brief history of the place. Provide the significance of the place. Provide time and cost details for the visit. 
-Also, provide the best time to visit the place. Finally, provide the best way to reach the place along with Google Maps link. 
-Each section should have a heading."""
+submit=st.button("Please Find More,Bro!🔎", type="primary")
+prompt = """You are a business expert who is able to explain to people about Small Medium Enterprises (SMEs) in Asia Pacific (APAC) Region. Provide five until ten small medium enterprises (SMEs) which located nearby the place (according to the chosen image). Provide detail information about those small medium enterprises (SMEs) located in the place. place in bullet points(Such as business information, potential economic sector, regional government policy, potential money cna be generated in the place etc). 
+Give a brief detail names of the small medium enterprises (SMEs) in the place. Provide the significance of business core in the place. Each section should have a heading."""
 
 
 if submit:
@@ -118,7 +115,7 @@ text-align: center;
 }
 </style>
 <div class="footer">
-<p>Developed with ❤ by <a text-align: justify;' href="https://twitter.com/MannaAmbarish" target="_blank">Ambarish</a></p>
+<p>Developed by Place2Joy Gaman - Ficky Alkarim</p>
 </div>
 """
 st.markdown(footer,unsafe_allow_html=True)
